@@ -1,0 +1,34 @@
+{% extends 'calorie/main.html'%}
+{% block body %}
+<br>
+<div style="margin:10px;" class="row">
+    <div class="col-md-6">
+        <h5>Food with calorie</h5>
+        <hr> 
+        <div class="card card-body">
+            <table class="table table-sm">
+                <tr>
+                    <th>Foodname</th>
+                    <th>Foodcal</th>
+                    <th>Remove</th>
+                </tr>
+                <tr>
+                    <td>{{views.food}}</td>
+                    <td>{{views.cal}}</td>
+                    <td><a class="btn btn-danger" href="">Delete</a></td>
+                </tr> 
+                  
+            </table>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <h5>Calorie Cosumed</h5>
+        <hr>
+        <div class="card card-body">
+            <table class="table table-sm">
+                
+            </table>
+        </div>
+    </div>
+</div>        
+{% endblock body %}

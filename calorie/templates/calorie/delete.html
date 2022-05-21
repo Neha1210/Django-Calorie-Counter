@@ -1,0 +1,17 @@
+<br>
+<div class="row mx-auto">
+	<div class="col-md-5 mx-auto">
+		<div class="card">
+			<div class="card-header">
+				<h5>Are you sure u want to delete "{{items}}?"</h5>
+			</div>
+			<div class="card-body">
+				<form action="{% url 'delete' items.id %}" method="POST">
+					{% csrf_token %}
+					<a  href="{% url 'home'%}">cancel</a>
+					<input class ="btn btn-primary" type="Submit" name="Confirm">
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

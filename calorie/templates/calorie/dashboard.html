@@ -1,0 +1,36 @@
+{% extends 'calorie/main.html' %}
+{% block body %}
+<br>
+<div class="row">
+    <div class="col-md">
+        <br>
+          <div class="row">
+             <div class="col">
+                <div class="card card-body">
+                  <form method="get">
+                    {{myfilter.form}}
+                   <button class="btn btn-success" type="submit">Search</button>
+                   </form>
+                </div>
+              </div>
+          </div>
+        <div class="card">
+            <table style="margin-right:30px;margin-left: 30px;" class="table table-sm">
+                <tr>
+                    <th>Sr.No</th>
+                    <th>FoodName</th>
+                    <th>calorie</th>
+                </tr>
+                {% for item in items %}
+                   <tr>
+                       <td>{{item.id}}</td>
+                       <td>{{item.foodname}}</td>
+                       <td>{{item.foodcal}}</td>
+                   </tr>
+                   {% endfor %}    
+            </table>
+        </div>
+    </div>
+</div>
+
+{% endblock body %}

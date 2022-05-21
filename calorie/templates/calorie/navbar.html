@@ -1,0 +1,14 @@
+{% load static %}
+
+<nav style="margin-right: 100px;margin-left: 100px;height:60px;background-color: #208BD7;" class="navbar navbar-expand-lg navbar-light" >
+  <div class="container-fluid">
+     <h1 style="font-family:Poor Richard; font-weight:bold;color: white; " class="navbar-brand " >Calorie Counter</h1>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a style="color:white;" class="nav-link active mx-3" aria-current="page" href="{% url 'home'%}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a style="color:white;" class="nav-link active mx-3" aria-current="page" href="{% url 'dashboard'%}">Search Food calorie</a>
+        </li>
+</nav>
