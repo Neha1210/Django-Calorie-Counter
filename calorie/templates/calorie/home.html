@@ -16,8 +16,8 @@
     <div class="col-md-6">
         <h5>Food with calorie</h5>
         <hr> 
-        <div class="card card-body">
-            <table class="table table-sm">
+        <div style="background:#ebeff5;" class="card card-body">
+            <table style="padding:200px;" class="table table-primary table-striped table-sm">
                 <tr>
                     <th>Foodname</th>
                     <th>Foodcal</th>
@@ -38,8 +38,8 @@
     <div class="col-md-6">
         <h5>Calorie Cosumed</h5>
         <hr>
-        <div class="card card-body">
-            <canvas id="myChart" width="400" height="90"></canvas>
+        <div style="width:480px;height:480px;margin-left:100px;" class="card card-body">
+            <canvas id="myChart" width="600px" height="900px"></canvas>
 <script>
 const ctx = document.getElementById('myChart').getContext('2d');
 const myChart = new Chart(ctx, {
@@ -50,13 +50,13 @@ const myChart = new Chart(ctx, {
             label: 'calorie',
             data: [{% for item in items %} {{item.cal}}, {% endfor%}],
             backgroundColor: [
-                'rgba(290, 95, 102, 2)',
-                'rgba(58, 162, 235, 2)',
-                'rgba(255, 206, 86, 2)',
-                'rgba(75, 192, 192, 2)',
-                'rgba(153, 102, 255, 2)',
-                'rgba(255, 159, 64, 2)',
-                'rgba(255, 99, 132, 2)',
+                'rgba(255, 0, 0, 2)',
+                'rgba(9, 125, 232, 2)',
+                'rgba(252, 238, 9, 2)',
+                'rgba(20, 200, 84, 2)',
+                'rgba(9, 35, 252, 2)',
+                'rgba(252, 125, 9, 2)',
+                'rgba(252, 9, 118, 2)',
                 'rgba(54, 162, 235, 2)',
                 'rgba(255, 206, 86, 2)',
                 'rgba(75, 192, 192, 2)',
@@ -64,12 +64,12 @@ const myChart = new Chart(ctx, {
                 'rgba(255, 159, 64, 2)'
             ],
             borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
+                'rgba(0, 0, 0, 1)',
+                'rgba(0, 0, 0, 1)',
+                'rgba(0, 0, 0, 1)',
+                'rgba(0, 0, 0, 1)',
+                'rgba(0, 0, 0, 1)',
+                'rgba(0, 0, 0, 1)'
             ],
             borderWidth: 1
         }]
